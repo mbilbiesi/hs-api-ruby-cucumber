@@ -1,0 +1,5 @@
+# config/cucumber.yml
+##YAML Template
+---
+verbose     : cucumber_api_verbose=true
+default: "--format pretty --color --format AllureCucumber::CucumberFormatter --out report/allure-results"

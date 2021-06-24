@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "mobile": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "user_type": {
+      "type": "string"
+    },
+    "zendesk_token": {
+      "type": "string"
+    },
+    "country_id": {
+      "type": "integer"
+    },
+    "orders_count": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "need_survey": {
+      "type": "boolean"
+    },
+    "referral_code": {
+      "type": "string"
+    },
+    "referral_program": {
+      "type": "object",
+      "properties": {
+        "already_referred": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "already_referred"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "mobile",
+    "email",
+    "user_type",
+    "zendesk_token",
+    "country_id",
+    "orders_count",
+    "name",
+    "need_survey",
+    "referral_code",
+    "referral_program"
+  ]
+}
